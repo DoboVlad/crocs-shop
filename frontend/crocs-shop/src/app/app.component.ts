@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crocs-shop';
-  randNr = 3;
 
   crocs = [
     {
@@ -36,8 +35,4 @@ export class AppComponent {
       price: '50$'
     }
   ]
-
-  generateRandomIntegerInRange(min: number, max: number) : number {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
 }
