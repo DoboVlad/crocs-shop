@@ -1,13 +1,9 @@
 <app-header></app-header>
 
 <!-- ALT+SHIFT+F -->
-<body>
-    <h2>Crocs</h2>
-    <h3>Buy the latest crocs</h3>
-    <div class = "products">
-        <app-crocs-details *ngFor="let croc of crocs" [crocsDetails]="croc">
-        </app-crocs-details>
-    </div>
+<div class="body">
+    <router-outlet></router-outlet>
+</div>
 
-</body>
+
 <app-footer></app-footer>
