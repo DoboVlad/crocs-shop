@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    background-color: #009999;
+    color: white;
+    padding: 2px
+  }
+  
+  .navbar__left {
+    display: flex;
+    flex-basis: 150px;
+    justify-content: space-between;
+    
+  }
+  
+  .navbar__right {
+    display: flex;
+    flex-basis:150px;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 70px;
+
+  }
