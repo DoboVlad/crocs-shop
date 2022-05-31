@@ -1,1 +1,31 @@
-<p>login works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+            <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                <div class="form-group">
+                    <label for="name">Username</label>
+                    <input type="text" placeholder="username" id="name" formControlName="name" class="form-control">
+                </div>
+                <span *ngIf="loginForm.get('name')?.touched && !loginForm.get('name')?.valid" class="help-block">
+                    The username is required!</span>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="password" id="password" formControlName="password"
+                        class="form-control">
+                </div>
+                <span *ngIf="!loginForm.get('password')?.valid && loginForm.get('password')?.touched"
+                    class="help-block">
+                    <span *ngIf="loginForm.get('password')?.errors?.['required']">
+                        The password is required!
+                    </span>
+                    <span *ngIf="loginForm.get('password')?.errors?.['minlength']">
+                        The password must have at least 8 characters!
+                    </span>
+                </span>
+                <span *ngIf="!loginForm.valid && loginForm.touched"
+                    class="help-block">Please enter valid data!</span>
+                <button class="btn btn-primary" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
