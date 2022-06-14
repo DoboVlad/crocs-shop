@@ -11,6 +11,7 @@ import { LoginComponent } from './core/login/login.component';
 import { RegisterComponent } from './core/register/register.component';
 import { AccountComponent } from './pages/account/account.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProductsComponent } from './pages/products/products.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

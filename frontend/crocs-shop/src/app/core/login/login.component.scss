@@ -1,0 +1,45 @@
+.container {
+    margin: 30px;
+}
+
+label[for="password"], label[for="name"] {
+    width: 120px;
+    display: inline-block;
+}
+
+input[type="password"], input[type="text"] {
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.form-group {
+    margin: 20px;
+}
+
+::placeholder {
+    color: grey;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+.help-block {
+    margin-left: 15px;
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.btn {
+    margin-left: 15px;
+    background-color: #009999;
+    font-size: 15px;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+}
