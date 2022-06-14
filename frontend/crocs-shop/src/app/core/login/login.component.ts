@@ -21,7 +21,6 @@ export class LoginComponent implements OnInit {
         null, 
         [Validators.required, Validators.minLength(8)])
     });
-    console.log(this.loginForm.get('password')?.errors)
   }
 
   onLogin() {
